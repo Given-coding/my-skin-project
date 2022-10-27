@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Skin App</title>
+
+    <style>
+        body {
+            background-color: white;
+        }
+        .overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.overlay a:hover, .overlay a:focus {
+  color: #F1F1F1;
+}
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+/*imagees*/
+@media (min-width: 980px){
+    .pizzas{
+        display: flex;
+    }
+}
+.medium-pizza{
+    border: solid #8D7474 1em;
+    background-color: burlywood;
+    margin: 1em;
+}
+.large-pizza{
+    border: solid grey 1em;
+    background-color: cornsilk;
+    margin: 1em;
+}
+.small-pizza{
+    border: solid #8D7474 1em;
+    background-color: bisque;
+    margin: 1em;
+}
+.head{
+  background-color: #8D7474;
+  text-align: center;
+  font-size:30px;cursor:pointer
+}
+button{
+  text-align: center;
+  padding: 0.5em;
+  background-color: #8D7474;
+  border-radius: 0.5em;
+  width: 9em;
+}
+.name{
+  text-align: center;
+  color: #991818;
+  font-family: initial;
+  font-size: 25px;
+}
+h2{
+  background-color: #991818;
+}
+
+
+
+
+    </style>
+</head>
+<body>
+  <div class="head">
+    <h1>Beauty Skin</h1>
+  
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="tutorials.html">Tutorials</a>
+          <a href="system.html">System Service</a>
+          <a href="learning.html">Learn More</a>
+          <a href="about.html">About Us</a>
+        </div>
+      </div>
+    </div>
+    
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Get Started</span>
+    <script>
+      function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+      }
+      function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+      }
+    </script>
+<div class="pizzas">
+  <div class="medium-pizza">
+      <img src="images/images.jpg" alt="Snow" style="width:100%">
+  </div>
+  <div class="large-pizza">
+      <img src="images/Mens-Skincare-How-to-Determine-YOUR-Skin-Type.webp" alt="Forest" style="width:410px", height="230px">
+  </div>
+  <div class="small-pizza">
+      <img src="images/images (2).jpg" alt="Mountains" style="width:100%">
+  </div>
+</div>
+
+
+
+    <div class="footer">
+      <div class="name">
+          <h3>KNOW YOUR</h3>
+          <h3>SKIN TYPE</h3>
+      </div>
+    </div>
+
+
+    
+</body>
+</html>
